@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(109.6deg, rgba(208, 102, 78, 1) 11.2%, rgba(153, 55, 70, 1) 45.3%, rgba(133, 48, 77, 1) 75.2%, rgba(77, 29, 45, 1) 100.2%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: rgb(255 255 255 / 50%);
+    padding: 1em 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 20%);
+    width: 60%;
+    max-width: 640px;
+    backdrop-filter: blur(2px);
+}
+
+main>div {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.selected>div, .options>div, .score>div {
+    padding: 0.5em;
+    font-size: 4em;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    border: 2px solid transparent;
+}
+
+.score>div {
+    font-size: 3em;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -0.5em;
+}
+
+.score button{
+    display: none;
+}
+
+p {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+div.winner {
+    position: absolute;
+    width: calc(100% - 1.75em);
+    height: calc(100% - 1.75em);
+    border-radius: 10px;
+    align-items: center;
+    background: #ffffffde;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.winner button {
+    display: block;
+    padding: 0.8em 1.6em;
+    font-size: 24px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.options>div.select{
+    color: rgba(153, 55, 70, 1);
+    border-color: rgba(153, 55, 70, 1);
+}
